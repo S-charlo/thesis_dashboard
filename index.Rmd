@@ -53,7 +53,7 @@ Column {data-width=400}
 ###
 
 <p style="font-size: 48px;">
-**Community Assests Rooted in Place**
+**Community Assets Rooted in Place**
 </p>
 
 <p style="font-size: 32px;">
@@ -113,12 +113,13 @@ Local Food System Components
 Column {.tabset}
 -------------------------------------
 
-### Explore Commercial Components
+### Local Food System Components
 
 <p style="font-size: 32px; text-align: center;">
   <strong>Local Food System Components in Metro Atlanta</strong>
 </p>
 
+<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
     <strong>Local food systems</strong> are interconnected components that support the production, distribution, and consumption of food. <strong>Local food systems shape food access</strong> through mechanism like availability, accessibility, and affordability. They include:
   </p>
@@ -126,7 +127,14 @@ Column {.tabset}
   - <strong>Communal components:</strong> gardens, farms, orchards, and farmers’ markets
   
   - <strong>Commercial components:</strong> grocery stores, convenience stores, dollar stores, specialty stores, and pharmacies)
+  
+  <strong>Use the next two tabs to explore the local food system components included in this study.</strong>
+</div>
 
+
+### Explore Commercial Components
+
+<strong>Commercial Components in Metro Atlanta</strong>
 ```{r commercial points}
 pal <- colorFactor(
   palette = c("orange", "blue", "darkgreen", "purple",  "red", "darkslategrey"),
@@ -148,12 +156,6 @@ county_sf <- st_read(here("tl_2020_13_all/tl_2020_13_county20.shp"), quiet = TRU
 
 county_labels <- county_sf |>
   st_point_on_surface()
-
-# subtype_recode_list <- clean_pts |>
-#   dplyr::filter(subtype_recode %in% commercial_types) |>
-#   dplyr::pull(subtype_recode) |>
-#   unique() |>
-#   sort()
 
 subtype_recode_list <- commercial_types[commercial_types %in% unique(clean_pts$subtype_recode)]
 
@@ -216,9 +218,8 @@ m <- leaflet(options = leafletOptions(
     fillColor = ~pal(subtype_recode),
     label = ~lapply(
     paste0(
-      "<strong>Component Name:</strong> ", Name, "<br/>",
-      "<strong>Component Type:</strong> ", subtype_recode
-    ),
+      "<strong>Component Name:</strong> ", Name, "<br/>"
+      ),
     htmltools::HTML
     ),
     labelOptions = labelOptions(
@@ -275,9 +276,8 @@ for (t in subtype_recode_list) {
       fillColor = ~pal(subtype_recode),
       label = ~lapply(
         paste0(
-          "<strong>Component Name:</strong> ", Name, "<br/>",
-          "<strong>Component Type:</strong> ", subtype_recode
-        ),
+          "<strong>Component Name:</strong> ", Name, "<br/>"
+          ),
         htmltools::HTML
       ),
       labelOptions = labelOptions(
@@ -291,10 +291,6 @@ for (t in subtype_recode_list) {
       group = as.character(t)
     )
 }
-
-# legend_labels <- sort(unique(clean_pts$subtype_recode))
-# 
-# legend_labels <- legend_labels[legend_labels %in% commercial_types]
 
 legend_labels <- commercial_types[commercial_types %in% unique(clean_pts$subtype_recode)]
 
@@ -315,19 +311,7 @@ legend_labels <- commercial_types[commercial_types %in% unique(clean_pts$subtype
 
 ### Explore Communal Components
 
-<p style="font-size: 32px; text-align: center;">
-  <strong>Local Food System Components in Metro Atlanta</strong>
-</p>
-
-  <p style="font-size: 16px;">
-    <strong>Local food systems</strong> are interconnected components that support the production, distribution, and consumption of food. <strong>Local food systems shape food access</strong> through mechanism like availability, accessibility, and affordability. They include:
-  </p>
-
-  - <strong>Communal components:</strong> gardens, farms, orchards, and farmers’ markets
-  
-  - <strong>Commercial components:</strong> grocery stores, convenience stores, dollar stores, specialty stores, and pharmacies)
-
-
+<strong>Communal Components in Metro Atlanta</strong>
 ```{r communal points}
 pal <- colorFactor(
   palette = c("orange", "blue", "darkgreen", "purple",  "red", "darkslategrey"),
@@ -349,12 +333,6 @@ county_sf <- st_read(here("tl_2020_13_all/tl_2020_13_county20.shp"), quiet = TRU
 
 county_labels <- county_sf |>
   st_point_on_surface()
-
-# subtype_recode_list <- clean_pts |>
-#   dplyr::filter(subtype_recode %in% communal_types) |>
-#   dplyr::pull(subtype_recode) |>
-#   unique() |>
-#   sort()
 
 subtype_recode_list <- communal_types[communal_types %in% unique(clean_pts$subtype_recode)]
 
@@ -418,9 +396,8 @@ m <- leaflet(options = leafletOptions(
     fillColor = ~pal(subtype_recode),
     label = ~lapply(
     paste0(
-      "<strong>Component Name:</strong> ", Name, "<br/>",
-      "<strong>Component Type:</strong> ", subtype_recode
-    ),
+      "<strong>Component Name:</strong> ", Name, "<br/>"
+      ),
     htmltools::HTML
     ),
     labelOptions = labelOptions(
@@ -476,9 +453,8 @@ for (t in subtype_recode_list) {
       fillColor = ~pal(subtype_recode),
       label = ~lapply(
         paste0(
-          "<strong>Component Name:</strong> ", Name, "<br/>",
-          "<strong>Component Type:</strong> ", subtype_recode
-        ),
+          "<strong>Component Name:</strong> ", Name, "<br/>"
+          ),
         htmltools::HTML
       ),
       labelOptions = labelOptions(
@@ -850,21 +826,30 @@ knitr::kable(
 <strong>Constructing the Analytic Sample</strong>
 </p>
 
+<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+  <p style="font-size: 16px; text-align: left;">
+  Study outcomes were constructed within the analytic dataset using component data from Atlanta Regional Commission's (ARC) [<strong>Gardens, Farms, and Orchards in Atlanta Region</strong>](https://opendata.atlantaregional.com/datasets/GARC::gardens-farms-and-orchards-in-atlanta-region-public-view-layer/about) dataset last updated in 2025 and the U.S. Department of Agriculture's [<strong>SNAP Retailer</strong>](https://www.fns.usda.gov/snap/retailer-locator/data) dataset from 2024.
+  </p>
+  
+  <p style="font-size: 16px; text-align: left;">
+  Resource indicator data (food insecurity, SNAP participation, transportation barriers, and housing insecurity) came from the Center for Disease Control’s (CDC) [<strong>Population Level Analysis and Community EStimates (PLACES): Local Data for Better Health</strong>](https://catalog.data.gov/dataset/places-census-tract-data-gis-friendly-format-2024-release) dataset released in 2024.
+  </p>
+  
+  <p style="font-size: 16px; text-align: left;">
+  Other study covariates (socioeconomic measures, racial/ethnic composition, and population totals) were 5-year estimates (2019 to 2023) from the <strong>American Community Survey (ACS)</strong> [<strong>DP03</strong>](https://data.census.gov/table/ACSDP5Y2023.DP03?q=DP03), [<strong>DP02</strong>](https://data.census.gov/table/ACSDP5Y2023.DP02), and [<strong>DP05</strong>](https://data.census.gov/table/ACSDP5Y2023.DP05).
+  </p>
+  
+  <p style="font-size: 16px; text-align: left;">
+  The analytic dataset was compiled between October 2025 and December 2025. Analysis was completed at the census-tract level for the 1,232 tracts included in the study.
+  </p>
+</div>  
+
+<strong>Stepwise Process Used to Build the Analytic Dataset</strong>
+
 <div style="text-align: center; height: auto;">
-  <img src="images/dataset.png" width="70%">
+  <img src="images/dataset.png" width="60%">
 </div>
 
-<p style="font-size: 16px; text-align: left;">
-Resource indicator data (food insecurity, SNAP participation, transportation barriers, and housing insecurity) came from the Center for Disease Control’s (CDC) <strong>Population Level Analysis and Community EStimates (PLACES): Local Data for Better Health</strong> dataset released in 2024.
-</p>
-
-<p style="font-size: 16px; text-align: left;">
-Other study covariates (socioeconomic measures, racial/ethnic composition, and population totals) were 5-year estimates (2019 to 2023) from the <strong>American Community Survey (ACS)</strong>.
-</p>
-
-<p style="font-size: 16px; text-align: left;">
-Study outcomes were constructed within the analytic dataset using component data from Atlanta Regional Commission's (ARC) <strong>Gardens, Farms, and Orchards in Atlanta Region</strong> dataset last updated in 2025 and the U.S. Department of Agriculture's <strong>SNAP Retailer</strong> dataset from 2024.
-</p>
 
 Study Findings
 ================================================================================
@@ -879,7 +864,7 @@ Column {.tabset}
 </div>
 
 <div style="text-align: center; height: auto;">
-  <img src="images/fi_choropleth_with_points.png" width="70%">
+  <img src="images/fi_choropleth_with_points.png" width="60%">
 </div>
 
 <div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
@@ -900,7 +885,7 @@ Column {.tabset}
 </div>
 
 <div style="text-align: center; height: auto;">
-  <img src="images/con_dollar_fi_choropleth_with_points.png" width="70%">
+  <img src="images/con_dollar_fi_choropleth_with_points.png" width="60%">
 </div>
 
 <div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
@@ -922,7 +907,7 @@ Column {.tabset}
 </div>
 
 <div style="text-align: center; height: auto;">
-  <img src="images/gardens_fi_choropleth_with_points.png" width="70%">
+  <img src="images/gardens_fi_choropleth_with_points.png" width="60%">
 </div>
 
 <div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 24px;">
@@ -971,9 +956,9 @@ The positive association between community gardens and food insecurity is likely
 
 <div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p>
-    This dashboard is a contribution towards better alignment across the communal and commercial components of the Metro Atlanta area local food system. These findings should lead to better alignment across components, strategic investments into food outlets, better food security upstream, and better health outcomes downstream.
+    This dashboard is a contribution towards better alignment across the communal and commercial components of the Metro Atlanta area local food system. It aims to uncover findings that lead to better alignment across components, strategic investments into food outlets, better food security upstream, and better health outcomes downstream.
     <br>
-    See the source code at 
+    See the source code within [Sofia's Github repository](https://github.com/S-charlo/thesis_dashboard/tree/main)
   </p>
 </div>
 
