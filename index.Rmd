@@ -134,7 +134,7 @@ Column {.tabset}
     
 <h3><strong>Commercial Food System Components</strong></h3>
 
-<img src="images/commercial.png" width=100%>
+<img src="images/commercial.jpeg" width=100%>
 
 <p>
 <strong>Commercial components are physical structures that facilitate formal buying and selling of food.</strong> They include the wholesale or individual sale of fresh, frozen, processed, or prepared food to consumers via convenience stores, grocery stores, supermarkets, dollar stores, specialty stores, pharmacies, fruit and vegetable markets, and vending machines.
