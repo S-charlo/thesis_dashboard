@@ -912,7 +912,9 @@ Column {.tabset}
 <div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <ul style="font-size: 16px;">
     <li>Neighborhoods with higher food insecurity rates also had higher concentrations of both communal and commercial food outlets even when controlling for other neighborhood characteristics like household income and racial composition.</li>
-    <li>A 10-percentage point increase in food insecurity was associated with 0.40 higher communal concentration per 10,000 adults And 1.49 higher commercial concentration per 10,000 adults.</li>
+    <li>The average number of communal components was 3 per 10,000 residents, and the average number of commercial components was 18 per 10,000 residents.</li>
+    <li>Commercial retailers are more concentrated in the metro area than communal components, and the amount of these components vary widely across neighborhoods.
+  </li>
   </ul>
 </div>
 
@@ -994,8 +996,6 @@ The positive association between community gardens and food insecurity is likely
 
 <div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p>
-    This dashboard is a contribution towards better alignment across the communal and commercial components of the Metro Atlanta area local food system. It aims to uncover findings that lead to better alignment across components, strategic investments into food outlets, better food security upstream, and better health outcomes downstream.
-    <br>
     See the source code within [Sofia's Github repository](https://github.com/S-charlo/thesis_dashboard/tree/main)
   </p>
 </div>
