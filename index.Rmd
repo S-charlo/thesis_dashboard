@@ -20,9 +20,12 @@ library(DT)
 library(readxl)
 library(kableExtra)
 library(knitr)
+library(readr)
 ```
 
 ```{r load data}
+#Load data and harmonize variable names
+
 here::i_am("index.Rmd")
 
 clean_pts <- readRDS(here("objects/clean_pts.rds")) |>
@@ -44,7 +47,7 @@ commercial_types <- c("Grocery Stores", "Convenience Stores", "Dollar Stores", "
 communal_types <- c("Gardens", "Farms", "Orchards", "Farmers' Markets")
 ```
 
-Background
+Home
 ================================================================================
 
 Column {data-width=400}
@@ -65,7 +68,7 @@ Associations Between Local Food Systems and Food Insecurity in Metro Atlanta
 <br>
 <br>
 <p style="text-align: right; margin-top: 20px; font-size: 32px;">
-**Sofia Charlot, MPH**
+<strong>Sofia Charlot, MPH</strong>
 </p>
 
 <p style="text-align: right; font-size: 20px;">
@@ -103,8 +106,8 @@ Column {data-width=400}
   "Food security exists when all people, at all times, have physical and economic access to sufficient, safe and nutritious food to meet their dietary needs and food preferences for an active and healthy life"
 </p>
   
-<p style="font-size: 22px; margin-top: 10px;">
-  -FAO, 1996
+<p style="font-size: 18px; margin-top: 10px;">
+  -Food and Agriculture Organization, 1996
 </p>
 
 Local Food System Components 
@@ -121,14 +124,46 @@ Column {.tabset}
 
 <div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
-    <strong>Local food systems</strong> are interconnected components that support the production, distribution, and consumption of food. <strong>Local food systems shape food access</strong> through mechanism like availability, accessibility, and affordability. They include:
+    <strong>Local food systems</strong> are interconnected components that support the production, distribution, and consumption of food. <strong>Local food systems shape food access</strong> through mechanism like availability, accessibility, and affordability. <strong>Use the next two tabs to explore the local food system components included in this study.</strong>
   </p>
+</div>
 
-  - <strong>Communal components:</strong> gardens, farms, orchards, and farmers’ markets
-  
-  - <strong>Commercial components:</strong> grocery stores, convenience stores, dollar stores, specialty stores, and pharmacies)
-  
-  <strong>Use the next two tabs to explore the local food system components included in this study.</strong>
+<div style="display:flex; flex-wrap:wrap; gap:15px; margin-bottom:15px;">
+
+<div style="flex:1 1 400px; border:1px solid #ccc; padding:12px; border-radius:6px; text-align:left;">
+    
+<h3><strong>Commercial Food System Components</strong></h3>
+
+<img src="images/commercial.png" width=100%>
+
+<p>
+<strong>Commercial components are physical structures that facilitate formal buying and selling of food.</strong> They include the wholesale or individual sale of fresh, frozen, processed, or prepared food to consumers via convenience stores, grocery stores, supermarkets, dollar stores, specialty stores, pharmacies, fruit and vegetable markets, and vending machines.
+<br>
+<br>
+Commercial components reflect a regulated retail environment – often characterized as “brick and mortar” – even as online retail expands. <strong>Such standardization signals the relatively static character of commercial components as features of the built food environment.</strong>
+<br>
+<br>
+They are <strong>designed to operate within parameters set by federal and local government and within industries that favor uniformity.</strong>
+</p>
+
+</div>
+
+<div style="flex:1 1 400px; border:1px solid #ccc; padding:12px; border-radius:6px; text-align:left;">
+    
+<h3><strong>Communal Food System Components</strong></h3>
+
+<img src="images/communal.png" width=100%>
+
+<p><strong>Communal components encompass the ways in which people exchange food outside of strictly retail contexts, with designs tailored to community preferences and needs.</strong> They include gardens, farms, orchards, farmers’ markets, food-buying cooperatives, community-supported agriculture programs (CSAs), farm-to-school initiatives, and food banks.
+<br>
+<br>
+Beyond material exchange, <strong>communal food spaces emphasize connection, knowledge transfer, and interdependence</strong> among people, between people and the environment, and across organizational initiatives.
+<br>
+<br>
+These dynamics can exist in commercial settings, but  are often more pronounced in communal spaces by intention: <strong>community members and institutions design these spaces for social connection and local responsiveness.</strong>
+</p>
+</div>
+
 </div>
 
 
@@ -136,8 +171,11 @@ Column {.tabset}
 
 <strong>Commercial Components in Metro Atlanta</strong>
 ```{r commercial points}
+
+#Interactive Visual #1 Commercial Components
+
 pal <- colorFactor(
-  palette = c("orange", "blue", "darkgreen", "purple",  "red", "darkslategrey"),
+  palette = c("#8DA0CB", "#009E73", "#F0E442",  "#D55E00", "#CC79A7", "#0072B2", "#E69F00", "#56B4E9",  "#76B7B2", "#4D4D4D"),
   domain = clean_pts$subtype_recode
 )
 
@@ -149,7 +187,7 @@ tract_sf <- readRDS(here("objects/tract_sf.rds")) |>
 county_sf <- st_read(here("tl_2020_13_all/tl_2020_13_county20.shp"), quiet = TRUE)|>
   st_transform(4326) |>
   filter(NAME20 %in% c(
-    "Cherokee", "Clayton", "Cobb", "DeKalb", "Douglas",
+    "Cherokee", "Clayton", "Cobb", "DeKalb", "Douglas", 
     "Fayette", "Forsyth", "Fulton", "Gwinnett",
     "Henry", "Rockdale"
   ))
@@ -160,7 +198,7 @@ county_labels <- county_sf |>
 subtype_recode_list <- commercial_types[commercial_types %in% unique(clean_pts$subtype_recode)]
 
 m <- leaflet(options = leafletOptions(
-    minZoom = 8,
+    minZoom = 9,
     maxBounds = list(
       c(33.23, -84.95),   # southwest: lat, lng
       c(34.40, -83.72)    # northeast: lat, lng
@@ -213,7 +251,7 @@ m <- leaflet(options = leafletOptions(
       dplyr::filter(subtype_recode %in% commercial_types),
     radius = 2.3,
     stroke = FALSE,
-    fillOpacity = 0.7,
+    fillOpacity = .9,
     color = ~pal(subtype_recode),
     fillColor = ~pal(subtype_recode),
     label = ~lapply(
@@ -271,7 +309,7 @@ for (t in subtype_recode_list) {
         dplyr::filter(subtype_recode == t),
       radius = 2.3,
       stroke = FALSE,
-      fillOpacity = 0.7,
+      fillOpacity = .9,
       color = ~pal(subtype_recode),
       fillColor = ~pal(subtype_recode),
       label = ~lapply(
@@ -300,7 +338,7 @@ legend_labels <- commercial_types[commercial_types %in% unique(clean_pts$subtype
       colors = pal(legend_labels),
       labels = legend_labels,
       title = "Commerical component type",
-      opacity = 1
+      opacity = .9
     ) |>
     addLayersControl(
       baseGroups = c("All", subtype_recode_list),
@@ -313,10 +351,8 @@ legend_labels <- commercial_types[commercial_types %in% unique(clean_pts$subtype
 
 <strong>Communal Components in Metro Atlanta</strong>
 ```{r communal points}
-pal <- colorFactor(
-  palette = c("orange", "blue", "darkgreen", "purple",  "red", "darkslategrey"),
-  domain = clean_pts$subtype_recode
-)
+
+#Interactive Visual #2 Communal Components
 
 tract_sf <- readRDS(here("objects/tract_sf.rds")) |>
   st_transform(4326)
@@ -338,7 +374,7 @@ subtype_recode_list <- communal_types[communal_types %in% unique(clean_pts$subty
 
 
 m <- leaflet(options = leafletOptions(
-    minZoom = 8,
+    minZoom = 9,
     maxBounds = list(
       c(33.23, -84.95),   # southwest: lat, lng
       c(34.40, -83.72)    # northeast: lat, lng
@@ -532,7 +568,7 @@ Column {data-width=250}
 
 - Chronic disease (e.g., hypertension, heart disease, and kidney disease)
 
-- poor health in children
+- Poor health in children
 
 - Anxiety and depression
 
@@ -542,12 +578,9 @@ Column {data-width=750}
 
 ### Use this map to explore food insecurity prevalence in Metro Atlanta
 
-```{r}
-library(leaflet)
-library(dplyr)
-library(sf)
-library(here)
-library(readr)
+```{r choropleth map}
+
+#Interactive Visual #3 Food Insecurity Prevalence
 
 here::i_am("index.Rmd")
 
@@ -790,7 +823,10 @@ Column {.tabset}
 </p>
 
 
-```{r}
+```{r Outcomes}
+
+#Outcome tables
+
 here::i_am("index.Rmd")
 
 table1_df <- readRDS("raw_data/table1_df.rds")
@@ -805,7 +841,9 @@ knitr::kable(
 
 ```
 
-```{r}
+```{r covariates}
+#Covariate table
+
 here::i_am("index.Rmd")
 
 table2_df <- readRDS("raw_data/table2_df.rds")
@@ -942,7 +980,7 @@ Study Conclusions
   </p>
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: right;">
+<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
 The positive association between community gardens and food insecurity is likely a product of the use of communal gardens to address gaps in food access. <strong>Just as the physical presence of commercial retailers does not guarantee improved food access, the presence of community gardens alone is unlikely to do so either.</strong> Further collaboration across local food system partners and better alignment between communal and commercial components is how progress continues.
   </p>
