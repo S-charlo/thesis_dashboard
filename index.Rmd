@@ -2,6 +2,7 @@
 title: 'A Masters Thesis'
 output: 
   flexdashboard::flex_dashboard:
+    self_contained: false
     vertical_layout: fill
     orientation: columns
     css: styles.css
