@@ -206,7 +206,9 @@ m <- leaflet(options = leafletOptions(
     )
   )
 ) |>
-  addProviderTiles(providers$CartoDB.Positron) |>
+    addTiles(
+    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_2zgw_1_3ca3d2245ba413735c70510e",
+    attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>') |>
   fitBounds(
     lng1 = -84.95, lat1 = 33.25,   # southwest corner
     lng2 = -83.72, lat2 = 34.40    # northeast corner
@@ -382,7 +384,9 @@ m <- leaflet(options = leafletOptions(
     )
   )
 ) |>
-  addProviderTiles(providers$CartoDB.Positron) |>
+    addTiles(
+    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_2zgw_1_3ca3d2245ba413735c70510e",
+    attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>') |>
   fitBounds(
     lng1 = -84.95, lat1 = 33.25,   # southwest corner
     lng2 = -83.72, lat2 = 34.40    # northeast corner
@@ -634,7 +638,9 @@ choro_map <- leaflet(
     )
   )
 ) |>
-  addProviderTiles(providers$CartoDB.PositronNoLabels) |>
+    addTiles(
+    "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png?key=cb1_2zgw_1_3ca3d2245ba413735c70510e",
+    attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>') |>
   fitBounds(
     lng1 = -84.95, lat1 = 33.25,
     lng2 = -83.72, lat2 = 34.40
