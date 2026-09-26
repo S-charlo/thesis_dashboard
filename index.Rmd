@@ -62,22 +62,27 @@ Column {data-width=400}
 
 <p style="font-size: 32px;">
 Associations Between Local Food Systems and Food Insecurity in Metro Atlanta
+</p>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<p style="text-align: right; margin-top: 20px; font-size: 32px;">
+<br>
+<br>
+<br>
+<p style="text-align: right; margin-top: 20px; font-size: 48px;">
 <strong>Sofia Charlot, MPH</strong>
 </p>
-
 <p style="text-align: right; font-size: 20px;">
 Behavioral, Social, & Health Education Sciences
 <br>
 Data Science Certificate
 </p>
-
+<p style="text-align: right; font-size: 12px;">
+Last Updated: 09/10/2026
+</p>
 
 Column {data-width=400}
 -----------------------------------------------------------------
@@ -103,6 +108,7 @@ Column {data-width=400}
 <br>
 <br>
 <br>
+<br>
 <p style="font-size: 22px; margin-top: 20px; font-style: italic; font-weight: bold;">
   "Food security exists when all people, at all times, have physical and economic access to sufficient, safe and nutritious food to meet their dietary needs and food preferences for an active and healthy life"
 </p>
@@ -110,6 +116,8 @@ Column {data-width=400}
 <p style="font-size: 18px; margin-top: 10px;">
   -Food and Agriculture Organization, 1996
 </p>
+
+
 
 Local Food System Components 
 ===============================================================================
@@ -125,7 +133,7 @@ Column {.tabset}
 
 <div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
-    <strong>Local food systems</strong> are interconnected components that support the production, distribution, and consumption of food. <strong>Local food systems shape food access</strong> through mechanism like availability, accessibility, and affordability. <strong>Use the next two tabs to explore the local food system components included in this study.</strong>
+    <strong>Local food systems</strong> are interconnected components that support the production, distribution, and consumption of food. <strong>Local food systems shape food access</strong> through factors like availability, accessibility, and affordability. <strong> Review the definitions below and use the next two tabs to explore the local food system components included in this study.</strong>
   </p>
 </div>
 
@@ -138,13 +146,13 @@ Column {.tabset}
 <img src="images/commercial.jpeg" width=100%>
 
 <p>
-<strong>Commercial components are physical structures that facilitate formal buying and selling of food.</strong> They include the wholesale or individual sale of fresh, frozen, processed, or prepared food to consumers via convenience stores, grocery stores, supermarkets, dollar stores, specialty stores, pharmacies, fruit and vegetable markets, and vending machines.
+<strong>Commercial components are physical structures where people buy and sell food.</strong> This includes the sale of fresh, frozen, processed, or prepared food to consumers in convenience stores, grocery stores, supermarkets, dollar stores, specialty stores, pharmacies, fruit and vegetable markets, vending machines, and more.
 <br>
 <br>
-Commercial components reflect a regulated retail environment – often characterized as “brick and mortar” – even as online retail expands. <strong>Such standardization signals the relatively static character of commercial components as features of the built food environment.</strong>
+Commercial components reflect a regulated retail environment – often characterized as “brick and mortar” – even as online retail expands. <strong>This represents the relatively static character of commercial components as features of the built food environment.</strong>
 <br>
 <br>
-They are <strong>designed to operate within parameters set by federal and local government and within industries that favor uniformity.</strong>
+<strong>Commercial components are designed to operate within parameters set by federal and local government and within industries that favor uniformity.</strong>
 </p>
 
 </div>
@@ -155,10 +163,10 @@ They are <strong>designed to operate within parameters set by federal and local 
 
 <img src="images/communal.png" width=100%>
 
-<p><strong>Communal components encompass the ways in which people exchange food outside of strictly retail contexts, with designs tailored to community preferences and needs.</strong> They include gardens, farms, orchards, farmers’ markets, food-buying cooperatives, community-supported agriculture programs (CSAs), farm-to-school initiatives, and food banks.
+<p><strong>Communal components encompass the ways in which people exchange food outside of strictly retail contexts, with designs tailored to community preferences and needs.</strong> They include gardens, farms, orchards, farmers’ markets, food-buying cooperatives, community-supported agriculture programs (CSAs), farm-to-school initiatives, food banks, and more.
 <br>
 <br>
-Beyond material exchange, <strong>communal food spaces emphasize connection, knowledge transfer, and interdependence</strong> among people, between people and the environment, and across organizational initiatives.
+Beyond material exchange, <strong>communal food spaces emphasize connection, knowledge transfer, and interdependence</strong> among people, between people and the environment, and across organizations.
 <br>
 <br>
 These dynamics can exist in commercial settings, but  are often more pronounced in communal spaces by intention: <strong>community members and institutions design these spaces for social connection and local responsiveness.</strong>
@@ -538,27 +546,27 @@ Column {data-width=250}
 
 ###
 
-**Food Insecurity in Georgia**
+**Food Insecurity in Georgia (2024)**
 
-- 14.3% across the state
+- 15.6% across the state
 
-- 12.0% across Metro Atlanta
+- 13.0% across Metro Atlanta
 
 
-**Food Insecurity in the Unites States**
+**Food Insecurity in the Unites States (2024)**
 
-- 13.7% of households nationally
+- 14.4% of households nationally
 
-- 18.4% of households with children
+- 19.5% of households with children
 
-- 36.8% of households headed by single-mothers with children
+- 36.8% of households headed by single-mothers
 
 - 39.4% of households with low income
 
 
-**Food Insecurity is Disperate**
+**Food Insecurity is Disperate (2024)**
 
-- 23.3% of Native American and Alaska Native households
+- 23.3% of Indigenous American and Alaska Native households
 
 - 21.0% of Black households
 
@@ -631,7 +639,7 @@ legend_breaks <- seq(0.0, legend_top, by = 5.0)
 choro_map <- leaflet(
   data = tract_map_sf,
   options = leafletOptions(
-    minZoom = 8,
+    minZoom = 9,
     maxBounds = list(
       c(33.20, -85.05),
       c(34.45, -83.65)
