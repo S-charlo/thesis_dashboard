@@ -1,1 +1,2 @@
 load("/Users/sofia/Documents/DATA555/final_part3a/raw_data/table_df.rds")
+load("/Users/sofia/Documents/DATA555/final_part3a/raw_data/table1_df.rds")

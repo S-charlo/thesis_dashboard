@@ -56,11 +56,12 @@ Column {data-width=400}
 
 ###
 
-<p style="font-size: 48px;">
+<div class="cream-section">
+<p style="font-size: 40px;">
 **Community Assets Rooted in Place**
 </p>
 
-<p style="font-size: 32px;">
+<p style="font-size: 20px;">
 Associations Between Local Food Systems and Food Insecurity in Metro Atlanta
 </p>
 <br>
@@ -72,7 +73,14 @@ Associations Between Local Food Systems and Food Insecurity in Metro Atlanta
 <br>
 <br>
 <br>
-<p style="text-align: right; margin-top: 20px; font-size: 48px;">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- <br> -->
+<p style="text-align: right; margin-top: 20px; font-size: 40px;">
 <strong>Sofia Charlot, MPH</strong>
 </p>
 <p style="text-align: right; font-size: 20px;">
@@ -83,6 +91,7 @@ Data Science Certificate
 <p style="text-align: right; font-size: 12px;">
 Last Updated: 09/10/2026
 </p>
+</div>
 
 Column {data-width=400}
 -----------------------------------------------------------------
@@ -97,11 +106,12 @@ Column {data-width=400}
   <img src="images/sugarcane.JPG" width=100%>
 </div>
 
-  Column {data-width=200}
+Column {data-width=200}
 -----------------------------------------------------------------
   
 ###
-  
+
+<div class="green-section">
 <br>
 <br>
 <br>
@@ -113,9 +123,10 @@ Column {data-width=400}
   "Food security exists when all people, at all times, have physical and economic access to sufficient, safe and nutritious food to meet their dietary needs and food preferences for an active and healthy life"
 </p>
   
-<p style="font-size: 18px; margin-top: 10px;">
+<p style="text-align: right; font-size: 12px; margin-top: 10px;">
   -Food and Agriculture Organization, 1996
 </p>
+</div>
 
 
 
@@ -131,7 +142,7 @@ Column {.tabset}
   <strong>Local Food System Components in Metro Atlanta</strong>
 </p>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
     <strong>Local food systems</strong> are interconnected components that support the production, distribution, and consumption of food. <strong>Local food systems shape food access</strong> through factors like availability, accessibility, and affordability. <strong> Review the definitions below and use the next two tabs to explore the local food system components included in this study.</strong>
   </p>
@@ -139,7 +150,7 @@ Column {.tabset}
 
 <div style="display:flex; flex-wrap:wrap; gap:15px; margin-bottom:15px;">
 
-<div style="flex:1 1 400px; border:1px solid #ccc; padding:12px; border-radius:6px; text-align:left;">
+<div style="flex:1 1 400px; background-color: #e7f3ee; border:1px solid #ccc; padding:12px; border-radius:6px; text-align:left;">
     
 <h3><strong>Commercial Food System Components</strong></h3>
 
@@ -157,7 +168,7 @@ Commercial components reflect a regulated retail environment – often character
 
 </div>
 
-<div style="flex:1 1 400px; border:1px solid #ccc; padding:12px; border-radius:6px; text-align:left;">
+<div style="flex:1 1 400px; background-color: #e7f3ee; border:1px solid #ccc; padding:12px; border-radius:6px; text-align:left;">
     
 <h3><strong>Communal Food System Components</strong></h3>
 
@@ -546,6 +557,8 @@ Column {data-width=250}
 
 ###
 
+<div class="cream-section">
+
 **Food Insecurity in Georgia (2024)**
 
 - 15.6% across the state
@@ -585,11 +598,13 @@ Column {data-width=250}
 
 - Anxiety and depression
 
+</div>
+
 
 Column {data-width=750}
 --------------------------------------------------------
 
-### Use this map to explore food insecurity prevalence in Metro Atlanta
+### **Use this map to explore food insecurity prevalence in Metro Atlanta**
 
 ```{r choropleth map}
 
@@ -758,7 +773,6 @@ htmltools::tagList(
 )
 ```
 
-
 Study Details
 ================================================================================
 
@@ -767,7 +781,7 @@ Column {.tabset}
 
 ### Study Aims
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 32px;">
     <strong>Purpose Statement</strong>
   </p>
@@ -776,15 +790,47 @@ Column {.tabset}
   </p>
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 32px;">
     <strong>Research Questions</strong>
   </p>
   <ol style="font-size: 16px;">
-    <li>What is the concentration of communal and commercial local food system components across neighborhoods in the Atlanta Metro area?</li>
-    <li>What is the association between the local rates of food insecurity and the concentration of communal and commercial local food system components in neighborhoods across Metro Atlanta?</li>
+    <li><strong>What is the concentration of communal and commercial local food system components across neighborhoods in the Atlanta Metro area?</strong></li>
+    <li><strong>What is the association between the local rates of food insecurity and the concentration of communal and commercial local food system components in neighborhoods across Metro Atlanta?</strong></li>
   </ol>
 </div>
+
+<div style="display:flex; flex-wrap:wrap; gap:15px; margin-bottom:15px;">
+
+<div style="flex:1 1 400px; background-color: #e7f3ee; border:1px solid #ccc; padding:12px; border-radius:6px; text-align:left;">
+
+  <p style="font-size: 32px;">
+    <strong>Knowledge Gaps in Current Research</strong>
+  </p>
+  <ol style="font-size: 16px;">
+    <li>Analysis of the changing landscape of food insecurity outside of the most studied Metro counties</li>
+    <li>Consideration of specific upstream determinants of availability, accessibility, and affordability</li>
+    <li>Interrogation of the upstream mechanisms that perpetuate or mitigate food insecurity</li>
+    <li>Studies using smaller-scale units of analysis</li>
+    <li>Insufficient analysis of the interplay between commercial and communal food system components</li>
+  </ol>
+</div>
+
+<div style="flex:1 1 400px; background-color: #e7f3ee; border:1px solid #ccc; padding:12px; border-radius:6px; text-align:left;">
+
+  <p style="font-size: 32px;">
+    <strong>Gaps Addressed In This Study</strong>
+  </p>
+  <ol style="font-size: 16px;">
+    <li>Inclusion of the full 11 counties in the Metro Atlanta area</li>
+    <li>Inclusion of resource indicators, socioeconomic measures, and racial composition as covariates</li>
+    <li>Evaluation of the relationship between food insecurity and the component parts of local food systems</li>
+    <li>Use of census-tract / neighborhood-level data</li>
+    <li>Extraction of the distinct influences that components have on food insecurity, priming future research to better evaluate how they interact</li>
+  </ol>
+</div>
+</div>
+
 
 ### Study Methods
 
@@ -792,7 +838,7 @@ Column {.tabset}
   <strong>Statistical Analysis</strong>
 </p>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 32px;">
     <strong>Univariate</strong>
   </p>
@@ -803,7 +849,7 @@ Column {.tabset}
   </ul> 
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 32px;">
     <strong>Bivariate</strong>
   </p>
@@ -812,7 +858,7 @@ Column {.tabset}
   </ul>
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 32px;">
     <strong>Multivariable</strong>
   </p>
@@ -837,41 +883,53 @@ Column {.tabset}
   <strong>Outcomes, Predictors, and Covariates</strong>
 </p>
 
+<div style="display:flex; flex-wrap: wrap; gap: 15px; margin-bottom: 15px;">
 
-```{r Outcomes}
+<div style="flex: 1 1 500px; background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; text-align: left;">
+  
+  <p style="font-size: 32px;">
+    <strong>Outcome Construction</strong>
+  </p>
+  
+  <ul style="font-size: 16px;"> 
+    <li>
+      <strong>Step 1: Defined components</strong>
+      <ul style="font-size: 16px;">
+        <li>Communal components: gardens, farms, orchards, and farmers’ markets</li>
+        <li>Commercial components: grocery stores, convenience stores, dollar stores, specialty stores, and pharmacies</li>
+      </ul>
+    </li>
+    <br>
+    <br>
+    <li>
+      <strong>Step 2: Generated "neighborhood" counts</strong>
+      <ul style="font-size: 16px;">
+        <li>Communal component counts per tract <strong>+ counts for neighboring tracts</strong></li>
+        <li>Commercial component counts <strong>+ counts for neighboring tracts</strong></li>
+        <li>Adult population totals <strong>+ totals for neighboring tracts</strong></li>
+      </ul>
+    </li>
+    <br>
+    <br>
+    <li>
+      <strong>Step 3: Generated "neighborhood" counts</strong>
+        <ul style="font-size: 16px;">
+          <li>Communal component concentration</li>
+          <li>Commercial component concentration</li>
+      </ul>
+    </li>
+  </ul>  
+</div>
 
-#Outcome tables
+<div style="flex: 1 1 500px; border: 1px solid #ccc; padding: 12px; text-align: left;">
+  <iframe 
+    src="images/distribution.pdf#toolbar=0"
+    style="width: 100%; height: 500px; border: none;">
+  </iframe>
+</div>
 
-here::i_am("index.Rmd")
+</div>
 
-table1_df <- readRDS("raw_data/table1_df.rds")
-
-#Univariate data table
-knitr::kable(
-   table1_df,
-   caption = "**Distribution of Communal and Commercial Components**",
-   digits = 2
- )
-
-
-```
-
-```{r covariates}
-#Covariate table
-
-here::i_am("index.Rmd")
-
-table2_df <- readRDS("raw_data/table2_df.rds")
-
-
-#Univariate data table
-knitr::kable(
-  table2_df,
-  caption = "**Distribution of Study Covariates**",
-  digits = 2
-)
-
-```
 
 ### Dataset Description
 
@@ -912,42 +970,40 @@ Column {.tabset}
 
 ### Main Finding 1
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
+<div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
   <strong>What is the concentration of communal and commercial local food system components?</strong>
+</div>
+
+<div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+  <ul style="font-size: 16px;">
+    <li>There were <strong>3 communal components per neighborhood and 18 commercial components per neighborhood</strong>.</li>
+    <li>The average concentration of communal components was <strong>1 per 10,000 residents</strong> and the average concentration of commercial components was <strong>8 per 10,000 residents</strong>.</li>
+    <li><strong>Commercial retailers are more concentrated in local food systems</strong> than communal components.</li>
+    <li>The range of <strong>component counts and concentrations vary widely across neighborhoods</strong>.</li>
+    <li><strong>Neighborhoods with higher food insecurity rates also had higher concentrations of both communal and commercial food outlets</strong> even when controlling for other neighborhood characteristics like household income and racial composition.</li>
+  </ul>
+</div>
+
+<div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
+  <strong>Local food insecurity rates were positively associated with higher concentrations of both communal (p = 0.033) and commercial components (p < 0.001)</strong>
 </div>
 
 <div style="text-align: center; height: auto;">
   <img src="images/fi_choropleth_with_points.png" width="60%">
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
-  <strong>Local food insecurity rates were positively associated with higher concentrations of both communal (p = 0.033) and commercial components (p < 0.001)</strong>
-</div>
-
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
-  <ul style="font-size: 16px;">
-    <li>Neighborhoods with higher food insecurity rates also had higher concentrations of both communal and commercial food outlets even when controlling for other neighborhood characteristics like household income and racial composition.</li>
-    <li>The average number of communal components was 3 per 10,000 residents, and the average number of commercial components was 18 per 10,000 residents.</li>
-    <li>Commercial retailers are more concentrated in the metro area than communal components, and the amount of these components vary widely across neighborhoods.
-  </li>
-  </ul>
-</div>
 
 ### Main Finding 2
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
+<div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
 <strong>What is the association between food insecurity and the concentration of commercial local food system components?</strong>
 </div>
 
-<div style="text-align: center; height: auto;">
-  <img src="images/con_dollar_fi_choropleth_with_points.png" width="60%">
-</div>
-
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
+<div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
   <strong>The positive association for commercial components was largely driven by convenience stores (p = <0.001) and dollar stores (p = 0.001).</strong>
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <ul style="font-size: 16px;">
     <li>This aligns with findings from previous studies that suggest that food insecurity is associated with a higher density of convenience and dollar stores.</li>
     <li>This is important because research shows that these outlets sell foods with low nutritional value, and foods that are highly processed, at higher prices.</li>
@@ -955,27 +1011,31 @@ Column {.tabset}
   </ul>
 </div>
 
+<div style="text-align: center; height: auto;">
+  <img src="images/con_dollar_fi_choropleth_with_points.png" width="60%">
+</div>
+
 ### Main Finding 3
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
+<div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
   <strong>What is the association between food insecurity and the concentration of communal local food system components?</strong>
 </div>
 
-<div style="text-align: center; height: auto;">
-  <img src="images/gardens_fi_choropleth_with_points.png" width="60%">
-</div>
-
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 24px;">
+<div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 24px;">
   <strong>The positive association between communal components and food insecurity was largely driven by gardens (p = 0.013)</strong>
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <ul style="font-size: 16px;">
     <li>Each 10 percentage-point increase in food insecurity was associated with a 0.33-unit higher concentration of gardens.</li>
     <li>One interpretation for this pattern is that it reflects strategic and intentional efforts to invest in community assets that can change the local food systems and create better food access.</li>
     <li>On a national scale, U.S. states and local governments have increasingly supported urban agriculture and community gardens through land-access policies, grants, tax incentives, and other programs.</li>
     <li>About a decade ago, like in many other cities, local food system leaders in the Metro started making plans towards addressing food access through expanding urban agriculture.</li>
   </ul>
+</div>
+
+<div style="text-align: center; height: auto;">
+  <img src="images/gardens_fi_choropleth_with_points.png" width="60%">
 </div>
 
 Study Conclusions
@@ -985,35 +1045,30 @@ Study Conclusions
   <strong>Study Conclusions</strong>
 </p>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
   <strong>There is intentional investments being made in both communal and commercial aspects of the local food system.</strong> Local food system leaders are already finding ways to coordinate those investments so that they are that are mutually beneficial and increase access to food.
   </p>
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
   There is movement to address food insecurity through the additions of commercial mechanisms targeted at gaps in food access. <strong>However, these findings suggest that geographic proximity to commercial retailers may not necessarily translate into more food secure populations.</strong>
   </p>
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
 The positive association between community gardens and food insecurity is likely a product of the use of communal gardens to address gaps in food access. <strong>Just as the physical presence of commercial retailers does not guarantee improved food access, the presence of community gardens alone is unlikely to do so either.</strong> Further collaboration across local food system partners and better alignment between communal and commercial components is how progress continues.
   </p>
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #d7ece3; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
   <strong>Local food systems guided by both socially oriented principles (like justice, equity, and cultural relevance) along with neoliberal tools (technology, information, market mechanisms) can create an interdependence that contributes not only to food access but also to community resilience and local economic vitality.</strong> Because of the growing presence of both communal and commercial food assets, the Metro area is well positioned for deeper integration across these components. Ultimately, achieving this will require intentional efforts grounded in equitable community partnerships and thoughtful city planning.
   </p>
 </div>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
-  <p>
-    See the source code within [Sofia's Github repository](https://github.com/S-charlo/thesis_dashboard/tree/main)
-  </p>
-</div>
 
 
 
