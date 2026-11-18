@@ -866,7 +866,7 @@ Column {.tabset}
       <ul style="font-size: 16px;">
         <li><strong>Outcome:</strong> Communal concentration</li>
         <li><strong>Outcome:</strong> Commercial concentration</li>
-        <li><strong>Outcome:</strong> Subtype (communal & commercial) concentration</li>
+        <li><strong>Outcome:</strong> Subtype concentration: Grocery store, Specialty store, Convenience Store, Dollar store, Pharmacy, Garden, Farm, Farmers' Market, and Orchard concentration</li>
         <li><strong>Main Predictor:</strong> Food insecurity</li>
         <li><strong>Model Covariates:</strong> Median household income | Limited educational attainment | % Black residents | % Asian residents | % Multiracial residents</li>
       </ul>
