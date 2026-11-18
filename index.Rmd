@@ -79,7 +79,6 @@ Associations Between Local Food Systems and Food Insecurity in Metro Atlanta
 <br>
 <br>
 <br>
-<!-- <br> -->
 <p style="text-align: right; margin-top: 20px; font-size: 40px;">
 <strong>Sofia Charlot, MPH</strong>
 </p>
@@ -89,7 +88,7 @@ Behavioral, Social, & Health Education Sciences
 Data Science Certificate
 </p>
 <p style="text-align: right; font-size: 12px;">
-Last Updated: 09/10/2026
+Last Updated: 11/10/2026
 </p>
 </div>
 
@@ -786,7 +785,7 @@ Column {.tabset}
     <strong>Purpose Statement</strong>
   </p>
   <p style="font-size: 16px;">
-    The purpose of this study is to examine the associations between local food insecurity rates and the relative concentration of different communal and commercial local food system components in neighborhoods across the Metro Atlanta area (Cherokee, Clayton, Cobb, DeKalb, Douglas, Fayette, Forsyth, Fulton, Gwinnett, Henry, and Rockdale County).
+   This study looks at the relationship between food insecurity rates and the concentration of different types of local food system components in neighborhoods across Metro Atlanta. (Cherokee, Clayton, Cobb, DeKalb, Douglas, Fayette, Forsyth, Fulton, Gwinnett, Henry, and Rockdale County).
   </p>
 </div>
 
@@ -808,11 +807,10 @@ Column {.tabset}
     <strong>Knowledge Gaps in Current Research</strong>
   </p>
   <ol style="font-size: 16px;">
-    <li>Analysis of the changing landscape of food insecurity outside of the most studied Metro counties</li>
-    <li>Consideration of specific upstream determinants of availability, accessibility, and affordability</li>
-    <li>Interrogation of the upstream mechanisms that perpetuate or mitigate food insecurity</li>
-    <li>Studies using smaller-scale units of analysis</li>
-    <li>Insufficient analysis of the interplay between commercial and communal food system components</li>
+    <li>Research that looks at how food insecurity is changing in Metro Atlanta counties that receive less research attention.</li>
+    <li>Research that examining the upstream factors that affect whether people can find, access, and afford food</li>
+    <li>Research at a more local level, like neighborhoods rather than entire counties.</li>
+    <li>Research differentiating and exploring commercial and communal food system components, including how they interact and relate to food security</li>
   </ol>
 </div>
 
@@ -822,11 +820,10 @@ Column {.tabset}
     <strong>Gaps Addressed In This Study</strong>
   </p>
   <ol style="font-size: 16px;">
-    <li>Inclusion of the full 11 counties in the Metro Atlanta area</li>
-    <li>Inclusion of resource indicators, socioeconomic measures, and racial composition as covariates</li>
-    <li>Evaluation of the relationship between food insecurity and the component parts of local food systems</li>
-    <li>Use of census-tract / neighborhood-level data</li>
-    <li>Extraction of the distinct influences that components have on food insecurity, priming future research to better evaluate how they interact</li>
+    <li>This study includes the full 11 counties in the Metro Atlanta area</li>
+    <li>This study evaluates the relationship between food insecurity and the component parts of local food systems</li>
+    <li>This study uses census-tract / neighborhood-level data</li>
+    <li>This study evaluates the distinct influences that components have on food insecurity, priming future research to better evaluate how they interact</li>
   </ol>
 </div>
 </div>
@@ -912,7 +909,7 @@ Column {.tabset}
     <br>
     <br>
     <li>
-      <strong>Step 3: Generated "neighborhood" counts</strong>
+      <strong>Step 3: Generated two continuous outcome variables</strong>
         <ul style="font-size: 16px;">
           <li>Communal component concentration</li>
           <li>Commercial component concentration</li>
@@ -937,7 +934,7 @@ Column {.tabset}
 <strong>Constructing the Analytic Sample</strong>
 </p>
 
-<div style="border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px; text-align: left;">
   Study outcomes were constructed within the analytic dataset using component data from Atlanta Regional Commission's (ARC) [<strong>Gardens, Farms, and Orchards in Atlanta Region</strong>](https://opendata.atlantaregional.com/datasets/GARC::gardens-farms-and-orchards-in-atlanta-region-public-view-layer/about) dataset last updated in 2025 and the U.S. Department of Agriculture's [<strong>SNAP Retailer</strong>](https://www.fns.usda.gov/snap/retailer-locator/data) dataset from 2024.
   </p>
@@ -979,13 +976,18 @@ Column {.tabset}
     <li>There were <strong>3 communal components per neighborhood and 18 commercial components per neighborhood</strong>.</li>
     <li>The average concentration of communal components was <strong>1 per 10,000 residents</strong> and the average concentration of commercial components was <strong>8 per 10,000 residents</strong>.</li>
     <li><strong>Commercial retailers are more concentrated in local food systems</strong> than communal components.</li>
-    <li>The range of <strong>component counts and concentrations vary widely across neighborhoods</strong>.</li>
-    <li><strong>Neighborhoods with higher food insecurity rates also had higher concentrations of both communal and commercial food outlets</strong> even when controlling for other neighborhood characteristics like household income and racial composition.</li>
+    <li>The range of <strong>component counts and concentrations vary widely across neighborhoods.</strong> There were between 0 and 40 communal and 0 and 63 commercial components per neighborhood.</li>
   </ul>
 </div>
 
 <div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
   <strong>Local food insecurity rates were positively associated with higher concentrations of both communal (p = 0.033) and commercial components (p < 0.001)</strong>
+</div>
+
+<div style="background-color: #d7ece3; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+  <p style="font-size: 16px;">
+  <strong>Neighborhoods with higher food insecurity rates had higher concentrations of both communal and commercial food outlets</strong> even when controlling for other neighborhood characteristics like household income and racial composition.
+  </p>
 </div>
 
 <div style="text-align: center; height: auto;">
@@ -1000,14 +1002,15 @@ Column {.tabset}
 </div>
 
 <div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
-  <strong>The positive association for commercial components was largely driven by convenience stores (p = <0.001) and dollar stores (p = 0.001).</strong>
+  <strong>There was a positive association between commercial components and food insecurity, largely driven by convenience stores (p = <0.001) and dollar stores (p = 0.001).</strong>
 </div>
 
 <div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <ul style="font-size: 16px;">
-    <li>This aligns with findings from previous studies that suggest that food insecurity is associated with a higher density of convenience and dollar stores.</li>
-    <li>This is important because research shows that these outlets sell foods with low nutritional value, and foods that are highly processed, at higher prices.</li>
-    <li>So, while technically there may be access to food outlets in areas with higher rates of food insecurity, this doesn’t necessarily translate into access to nutritious foods.</li>
+    <li>Each 10 percentage-point increase in <strong>food insecurity was associated with a 1.14-unit higher concentration of convenience stores and a 0.15-unit higher concentration of dollar stores</strong>.</li>
+    <li><strong>This aligns with findings from previous studies</strong> that suggest that food insecurity is associated with a higher density of convenience and dollar stores.</li>
+    <li>This is important because research shows that <strong>these outlets sell foods with low nutritional value, and that are highly processed, at higher prices</strong>.</li>
+    <li>So, while technically there may be access to food in areas with higher rates of food insecurity, <strong>this doesn’t necessarily translate into access to nutritious foods</strong>.</li>
   </ul>
 </div>
 
@@ -1021,16 +1024,16 @@ Column {.tabset}
   <strong>What is the association between food insecurity and the concentration of communal local food system components?</strong>
 </div>
 
-<div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 24px;">
-  <strong>The positive association between communal components and food insecurity was largely driven by gardens (p = 0.013)</strong>
+<div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: center; font-size: 20px;">
+  <strong>There is a positive association between communal components and food insecurity, largely driven by gardens (p = 0.013)</strong>
 </div>
 
 <div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <ul style="font-size: 16px;">
-    <li>Each 10 percentage-point increase in food insecurity was associated with a 0.33-unit higher concentration of gardens.</li>
-    <li>One interpretation for this pattern is that it reflects strategic and intentional efforts to invest in community assets that can change the local food systems and create better food access.</li>
+    <li>Each 10 percentage-point increase in <strong>food insecurity was associated with a 0.33-unit higher concentration of gardens</strong>.</li>
+    <li>One possible explanation for this pattern is that <strong>it reflects intentional efforts to invest in community assets that can change the local food systems and create better food access</strong>.</li>
     <li>On a national scale, U.S. states and local governments have increasingly supported urban agriculture and community gardens through land-access policies, grants, tax incentives, and other programs.</li>
-    <li>About a decade ago, like in many other cities, local food system leaders in the Metro started making plans towards addressing food access through expanding urban agriculture.</li>
+    <li>About twenty years ago, like in many other cities, <strong>local food system leaders in Metro Atlanta strengthened their efforts to improve food access by expanding urban agriculture.</strong>.</li>
   </ul>
 </div>
 
@@ -1047,25 +1050,49 @@ Study Conclusions
 
 <div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
-  <strong>There is intentional investments being made in both communal and commercial aspects of the local food system.</strong> Local food system leaders are already finding ways to coordinate those investments so that they are that are mutually beneficial and increase access to food.
+<strong>The positive association between commercial food outlets and food insecurity reflects a common pattern found in many urban areas where there are many commercial retailers that may contribute very little to overall food access.</strong> In the metro area, that increased concentration is also driven by recent investments made to address gaps in food access, like the opening of a [municipal grocery store](https://www.atlantaga.gov/Home/Components/News/News/15515/1338).
+
+
+<strong>The positive association between gardens and food insecurity reflects [intentional efforts to increase food access](https://www.foodwellalliance.org/localfood).</strong> Gardens are more concentrated in areas with higher rates of food insecurity because they were strategically placed to address food access gaps.
   </p>
 </div>
 
 <div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
-  There is movement to address food insecurity through the additions of commercial mechanisms targeted at gaps in food access. <strong>However, these findings suggest that geographic proximity to commercial retailers may not necessarily translate into more food secure populations.</strong>
+Even with higher concentrations of both commercial and communal food outlets in areas with high food insecurity, food access can still be an issue. <strong>Prior research establishes that the physical presence of both commercial retailers and community gardens alone do not guarantee improved food access.</strong> Living near food outlets does not necessarily mean people have better access to food or are less likely to experience food insecurity.
   </p>
 </div>
 
 <div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
-The positive association between community gardens and food insecurity is likely a product of the use of communal gardens to address gaps in food access. <strong>Just as the physical presence of commercial retailers does not guarantee improved food access, the presence of community gardens alone is unlikely to do so either.</strong> Further collaboration across local food system partners and better alignment between communal and commercial components is how progress continues.
+These findings suggest that food availability (in presence, cost, and proximity) is one of multiple factors that influence food security. <strong>Other factors, like neighborhood walkability, local zoning practices, and historic or ongoing structural inequities, also effect how people access food, even when it is available.</strong>
   </p>
 </div>
 
-<div style="background-color: #d7ece3; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+<div style="background-color: #fcf6f0; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
   <p style="font-size: 16px;">
-  <strong>Local food systems guided by both socially oriented principles (like justice, equity, and cultural relevance) along with neoliberal tools (technology, information, market mechanisms) can create an interdependence that contributes not only to food access but also to community resilience and local economic vitality.</strong> Because of the growing presence of both communal and commercial food assets, the Metro area is well positioned for deeper integration across these components. Ultimately, achieving this will require intentional efforts grounded in equitable community partnerships and thoughtful city planning.
+<strong>So what does this mean for the community members, city planners, local food system leaders, commercial retailers, academics, and public health professionals</strong> who have a vested interest in addressing food insecurity and creating food abundance in the metro area?
+<br>
+<br>
+Since quantity, quality, context, and coordination all matter equally when designing an effective food system, <strong>it means that further investments in both communal and commercial aspects of the local food system should include intentional coordination (across community members, city officials, and public and private institutions) so that they are mutually beneficial, ecologically protective, economically viable, and increase access to food.</strong>
+  </p>
+</div>
+
+<div style="background-color: #f7fbf9; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+  <p style="font-size: 16px;">
+    <strong>That coordination can look like the following:</strong>
+  </p>
+  <ul style="font-size: 16px;">
+      <li>More city planning that optimizes collaboration between food outlets, supply chain components, and the natural landscape, like [the Urban Food Forest at Browns Mill](https://www.conservationfund.org/our-impact/projects/urban-food-forest-at-browns-mill/).</li>
+      <li>Private, public, and non-profit charitable food distribution efforts (like Food-as-Medicine or Summer Food Service programs) [sourcing food directly from local farms and gardens](https://chlpi.org/news-and-events/news-and-commentary/press-release/maximizing-the-impact-of-nutrition-interventions-with-local-food-procurement/).</li>
+      <li>Local and state policy provisions that incentivize partnerships between independent (and often smaller-scale) food producers and retailers.</li>
+      <li>[Food policy councils](https://ucanr.edu/sites/default/files/2013-12/178441.pdf) as dedicated spaces for community members to collaborate with local officials and city planners.</li>
+  </ul>
+</div>
+
+<div style="background-color: #e7f3ee; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
+  <p style="font-size: 16px;">
+The Metro Atlanta area has a unique food system that includes food outlets guided by socially oriented principles (like justice, equity, and cultural relevance), alongside commercial retailers soley governed by industry norms (like supply, demand, profit, and other market mechanisms). <strong>Better interdependence between these outlets and their guiding principles can contribute to increased food access, community resilience, and local economic vitality.</strong> Ultimately, achieving this will require intentional efforts grounded in equitable community partnerships and thoughtful city planning.
   </p>
 </div>
 
